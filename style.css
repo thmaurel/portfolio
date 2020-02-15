@@ -143,12 +143,51 @@ body {
 .contact-content {
   background-color: rgba(255,255,255,0.6);
   width: 70vw;
-  height: 70vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: column;
   border-radius: 5px;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.contact-grid a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.contact-grid a:hover {
+  opacity: 1;
+}
+
+.contact-card {
+  display:flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: lighter;
+}
+
+.contact-img {
+  font-size: 2vw;
+  margin: 0 10px;
+}
+
+.contact-description p {
+  margin: 0;
+  text-decoration: none;
+}
+
+.contact-description h3 {
+  margin: 0;
+  text-decoration: none;
 }
 
 /* Typing effect */
