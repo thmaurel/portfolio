@@ -31,3 +31,13 @@ const mySiema = new Siema({
 setInterval(() => mySiema.next(), 3000)
 
 
+const mySiema3 = new Siema({
+  selector: '.siema3',
+  duration: 1450,
+  loop: true,
+  easing: 'ease-out',
+});
+
+// listen for keydown event
+setInterval(() => mySiema3.next(), 3000)
+

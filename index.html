@@ -12,10 +12,11 @@
   </head>
   <body>
     <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(images/banner2.jpg);">
-      <div class="container">
+      <div class="container banner-content">
         <h1>Thibaud Maurel</h1>
         <h2>Développeur FullStack</h2>
-        <h2>Prof @Le Wagon Paris</h2>
+        <h2>Prof <a href="https://www.lewagon.com/fr" target="_blank" class="banner-link">@Le Wagon Paris</a></h2>
+        <a href="#contact" class="btn-contact">Contactez moi!</a>
       </div>
       <div class="scroll-down">
         <div class="container2">
@@ -62,13 +63,41 @@
         </div>
       </div>
     </div>
+    <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project11.jpg);">
+      <div class="container project-content">
+        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/project12.jpg);"></div>
+        <div class="swap-content">
+          <h2>InStyll</h2>
+          <div class="portfolio-carousel">
+            <p>InStyll est une application qui permet de trouver des idées de look à partir d'un vêtement. Les looks sont publiés par des influenceuses et directement reliés aux vêtements qui les composent.</p>
+            <p><strong>Mon travail</strong> : développement de tout le back-office.</p>
+            <p><strong>Techno</strong> : Ruby on Rails, HTML, CSS, Javascript, Heroku, AWS S3</p>
+          </div>
+          <div class="siema3 portfolio-carousel">
+            <img src="images/instyll.png" alt="">
+            <img src="images/instyll1.png" alt="">
+            <img src="images/instyll2.png" alt="">
+            <img src="images/instyll3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <div class="container2">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+    </div>
     <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project.jpg);">
       <div class="container project-content">
-        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(images/project2.jpg);"></div>
+        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/project2.jpg);"></div>
         <div class="swap-content">
           <h2>Skrumble</h2>
           <div class="portfolio-carousel">
             <p>Skrumble est le projet de fin de formation du Wagon. Toujours par groupe de 4, il faut désormais développer un vrai projet proposé par l'un des membres du groupe.</p>
+            <p><strong>Mon travail</strong> : développement du dashboard et des recommandations par trip</p>
+            <p><strong>Techno</strong> : Ruby on Rails, HTML, CSS, Javascript, Heroku, Cloudinary</p>
           </div>
           <div class="siema portfolio-carousel">
             <img src="images/skrumble.png" alt="">
@@ -88,11 +117,13 @@
     </div>
     <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/projects.jpg);">
       <div class="container project-content">
-        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(images/projects2.jpg);"></div>
+        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/projects2.jpg);"></div>
         <div class="swap-content">
           <h2>Jabba Rentals</h2>
           <div class="portfolio-carousel">
             <p>Jabba Rentals est le premier projet du Wagon. Il faut développer un airbnb-like par groupe de 4 pour apprendre à collaborer avant le projet final. Nous avions décidé de mettre en location des vaisseaux spatiaux!</p>
+            <p><strong>Mon travail</strong> : développement du dashboard et de la fonctionnalité d'avis pour les vaisseaux.</p>
+            <p><strong>Techno</strong> : Ruby on Rails, HTML, CSS, Javascript, Heroku, Cloudinary</p>
           </div>
           <div class="siema2 portfolio-carousel">
             <img src="images/jabba.png" alt="">
@@ -110,10 +141,19 @@
         </div>
       </div>
     </div>
-    <div class="contact" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/contact.jpg);">
+    <div class="contact" id="contact" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/contact.jpg);">
       <div class="contact-content">
         <div class="contact-background" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(images/contact2.jpg);"></div>
-        <h2>Contact me!</h2>
+        <div class="contact-info">
+          <h2>Contactez moi !</h2>
+          <form method="POST" action="http://formspree.io/maurel.thibaud@free.fr" class="contact-form">
+            <label for="_replyto">Votre adresse e-mail</label>
+            <input type="email" name="_replyto" class="form-input">
+            <label for="body">Votre Message</label>
+            <textarea name="body" class="email-body form-input"></textarea>
+            <input type="submit" value="Send" class="form-submit">
+          </form>
+        </div>
         <div class="contact-grid">
           <a href="https://github.com/thmaurel">
             <div class="contact-card">
