@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
 }
 
 .bio-content {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.6);
   width: 70vw;
   height: 70vh;
   display: flex;
@@ -97,22 +98,57 @@ body {
 }
 
 .project-content {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.6);
   width: 70vw;
   height: 70vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
 }
 
 .portfolio-carousel {
-  width: 35vw;
+  width: 50vw;
 }
 
 .portfolio-carousel img {
-  width: 30vw;
+  width: 45vw;
   height: auto;
   object-fit: cover;
+}
+
+.swap-content h2 {
+  margin: 0;
+}
+
+.swap-content p {
+  margin: 10px;
+}
+
+.swap-content {
+  text-align: center;
+}
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.contact-content {
+  background-color: rgba(255,255,255,0.6);
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  border-radius: 5px;
 }
 
 /* Typing effect */

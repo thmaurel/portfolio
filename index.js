@@ -11,6 +11,16 @@ scrolls.forEach((scroll) => {
   })
 })
 
+const mySiema2 = new Siema({
+  selector: '.siema2',
+  duration: 1450,
+  loop: true,
+  easing: 'ease-out',
+});
+
+// listen for keydown event
+setInterval(() => mySiema2.next(), 3000)
+
 const mySiema = new Siema({
   duration: 1450,
   loop: true,
@@ -20,12 +30,4 @@ const mySiema = new Siema({
 // listen for keydown event
 setInterval(() => mySiema.next(), 3000)
 
-const mySiema2 = new Siema({
-  selector: '.siema2',
-  duration: 1450,
-  loop: true,
-  easing: 'ease-out',
-});
 
-// listen for keydown event
-setInterval(() => mySiema2.next(), 12000)
