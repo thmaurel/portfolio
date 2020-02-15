@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.bio {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.bio-content {
+  background-color: rgba(255,255,255,0.5);
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.bio-image {
+  text-align: center;
+  padding: 20px;
+}
+
+.bio-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bio-description {
+  font-size: 12px;
+  padding: 20px;
+}
+
+.bio-description h2 {
+  margin-bottom: 0;
+}
+
+.skill-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.skill-icon {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.edu-grid {
+  display:grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.edu-icon {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.project {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.project-content {
+  background-color: rgba(255,255,255,0.5);
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.portfolio-carousel {
+  width: 35vw;
+}
+
+.portfolio-carousel img {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Typing effect */
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .10em;*/
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Scroll Down icon */
+
+.scroll-down {
+  position: absolute;
+  width:24px;
+  right: calc(50vw - 12px);
+  bottom: 40px;
+}
+
+.container2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
