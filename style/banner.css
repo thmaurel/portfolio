@@ -1,0 +1,51 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+}
+
+.banner-content {
+  border: 2px solid #E42829;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+  padding: 50px;
+  padding-top: 40px;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40vh;
+}
+
+.banner-link {
+  text-decoration: none;
+  color: #E42829;
+}
+
+.banner-link:hover {
+  text-decoration: underline;
+}
+
+.btn-contact {
+  background-color: #E42829;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.btn-contact:hover {
+  opacity: 1;
+}

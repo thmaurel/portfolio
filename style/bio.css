@@ -1,0 +1,82 @@
+.bio {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.bio-content {
+  background-color: rgba(255,255,255,0.6);
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  overflow:hidden;
+}
+
+.bio-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  right:-10vw;
+  top:-10vh;
+  z-index: 2;
+}
+
+.bio-image {
+  text-align: center;
+  padding: 20px;
+  z-index: 3;
+}
+
+.bio-image img {
+  width: 36vh;
+  height: 36vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bio-description {
+  font-size: 16px;
+  padding: 20px;
+  z-index: 3;
+}
+
+.bio-description h2 {
+  margin: 0;
+}
+
+.skill-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.skill-icon {
+  height: 10vh;
+  margin-top: 10px;
+}
+
+.edu-grid {
+  display:grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edu-icon {
+  height: 15vh;
+  margin-top: 10px;
+}

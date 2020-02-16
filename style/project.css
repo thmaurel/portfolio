@@ -1,0 +1,63 @@
+.project {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.project-content {
+  background-color: rgba(255,255,255,0.6);
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  overflow:hidden;
+}
+
+.project-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  right:-10vw;
+  top:-10vh;
+  z-index: 2;
+}
+
+.portfolio-carousel {
+  width: 50vw;
+}
+
+.portfolio-carousel img {
+  width: 45vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.swap-content h2 {
+  margin: 0;
+  margin-top: 30px;
+  color: #E42829;
+  font-size: 32px;
+}
+
+.swap-content p {
+  font-size: 20px;
+}
+
+.swap-content {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  z-index: 3;
+}
