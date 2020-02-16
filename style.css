@@ -9,6 +9,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.d-none {
+  display:none;
+}
+
 /* Typing effect */
 
 .typewriter h1 {
@@ -34,8 +38,6 @@ body {
   50% { border-color: orange; }
 }
 
-
-
 /* RESPONSIVE */
 
 @media (max-width: 960px) {
@@ -46,4 +48,12 @@ body {
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+  .desktop-only {
+    display:none;
+  }
+
+  .mobile-flex {
+    display: flex;
+    justify-content: space-around;
+  }
 }

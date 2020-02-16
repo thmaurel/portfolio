@@ -20,21 +20,10 @@
   overflow:hidden;
 }
 
-.bio-background {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  right:-10vw;
-  top:-10vh;
-  z-index: 2;
-}
-
 .bio-image {
+  width:100%;
   text-align: center;
   padding: 20px;
-  z-index: 3;
 }
 
 .bio-image img {
@@ -46,11 +35,24 @@
 .bio-description {
   font-size: 16px;
   padding: 20px;
-  z-index: 3;
 }
 
 .bio-description h2 {
   margin: 0;
+}
+
+.edu-grid {
+  display:grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edu-icon {
+  height: 15vh;
+  margin-top: 10px;
 }
 
 .skill-grid {
@@ -67,16 +69,53 @@
   margin-top: 10px;
 }
 
-.edu-grid {
-  display:grid;
-  grid-template-columns: 1fr 2fr 4fr;
-  grid-gap: 5px;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
+/* RESPONSIVE */
 
-.edu-icon {
-  height: 15vh;
-  margin-top: 10px;
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .bio-content {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .bio-image {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .bio-image img {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .bio-description {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+    height:auto;
+  }
+
+  .skill-icon {
+    height: 8vh;
+    margin-top: 10px;
+  }
 }

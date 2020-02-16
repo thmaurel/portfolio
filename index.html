@@ -11,7 +11,7 @@
     <title>Thibaud Maurel</title>
   </head>
   <body>
-    <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(images/banner2.jpg);">
+    <div class="banner d-none" style="background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(images/banner2.jpg);">
       <div class="banner-content">
         <h1>Thibaud Maurel</h1>
         <h2>Développeur FullStack</h2>
@@ -26,18 +26,19 @@
         </div>
       </div>
     </div>
-    <div class="bio" id="bio" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/bio2.jpg);">
+    <div class="bio d-none" id="bio" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/bio2.jpg);">
       <div class="bio-content">
-        <div class="bio-background" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(images/bio2.jpg);"></div>
         <div class="bio-image">
           <img src="images/thibaud-test.png" alt="">
-          <p>AGE : 28</p>
-          <p>LOCATION : PARIS</p>
+          <div class="mobile-flex">
+            <p>AGE : 28</p>
+            <p>LOCATION : PARIS</p>
+          </div>
         </div>
         <div class="bio-description">
-          <h2>A propos</h2>
-          <p>   Originaire de banlieue parisienne, j'ai passé 3 ans en Bretagne dans le cadre de ma formation d'ingénieur à Telecom Bretagne. Après 2 ans de gestion de projet chez BNP Paribas, je suis parti en Nouvelle-Zélande dans le cadre d'un visa vacances-travail. Cette aventure très enrichissante m'a permis de découvrir une nouvelle culture et de vivre des expériences très variées.</p>
-          <p>   Après cette année de voyages et nombreuses découvertes, je suis rentré en France désireux de prendre une nouvelle direction. J'ai donc suivi la formation de développeur full stack chez Le Wagon qui m'a convaincu. J'ai par la suite rejoint l'équipe de professeurs afin de pouvoir transmettre ce qui m'avait été appris.</p>
+          <h2 class="desktop-only">A propos</h2>
+          <p class="desktop-only">   Originaire de banlieue parisienne, j'ai passé 3 ans en Bretagne dans le cadre de ma formation d'ingénieur à Telecom Bretagne. Après 2 ans de gestion de projet chez BNP Paribas, je suis parti en Nouvelle-Zélande dans le cadre d'un visa vacances-travail. Cette aventure très enrichissante m'a permis de découvrir une nouvelle culture et de vivre des expériences très variées.</p>
+          <p class="desktop-only">   Après cette année de voyages et nombreuses découvertes, je suis rentré en France désireux de prendre une nouvelle direction. J'ai donc suivi la formation de développeur full stack chez Le Wagon qui m'a convaincu. J'ai par la suite rejoint l'équipe de professeurs afin de pouvoir transmettre ce qui m'avait été appris.</p>
           <h2>Formations</h2>
           <div class="edu-grid">
             <img src="images/estb2.png" alt="" class="edu-icon">
@@ -63,9 +64,8 @@
         </div>
       </div>
     </div>
-    <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project12.jpg);">
+    <div class="project d-none" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project12.jpg);">
       <div class="project-content">
-        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/project12.jpg);"></div>
         <div class="swap-content">
           <h2>InStyll</h2>
           <div class="portfolio-carousel">
@@ -89,9 +89,8 @@
         </div>
       </div>
     </div>
-    <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project2.jpg);">
+    <div class="project d-none" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/project2.jpg);">
       <div class="project-content">
-        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/project2.jpg);"></div>
         <div class="swap-content">
           <h2>Skrumble</h2>
           <div class="portfolio-carousel">
@@ -115,9 +114,8 @@
         </div>
       </div>
     </div>
-    <div class="project" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/projects2.jpg);">
+    <div class="project d-none" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/projects2.jpg);">
       <div class="project-content">
-        <div class="project-background" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),url(images/projects2.jpg);"></div>
         <div class="swap-content">
           <h2>Jabba Rentals</h2>
           <div class="portfolio-carousel">
@@ -143,7 +141,6 @@
     </div>
     <div class="contact" id="contact" style="background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2), rgba(0,0,0,0.5)),url(images/contact2.jpg);">
       <div class="contact-content">
-        <div class="contact-background" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(images/contact2.jpg);"></div>
         <div class="contact-info">
           <h2>Contactez moi !</h2>
           <form method="POST" action="http://formspree.io/maurel.thibaud@free.fr" class="contact-form">
