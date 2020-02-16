@@ -155,7 +155,7 @@ body {
 .project-content {
   background-color: rgba(255,255,255,0.6);
   width: 80vw;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,7 +171,7 @@ body {
   background-size: cover;
   background-position: center;
   right:-10vw;
-  top:-5vh;
+  top:-10vh;
   z-index: 2;
 }
 
@@ -348,7 +348,7 @@ body {
   position: absolute;
   width:24px;
   right: calc(50vw - 12px);
-  bottom: 40px;
+  bottom: 50px;
 }
 
 .container2 {
